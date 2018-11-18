@@ -26,10 +26,10 @@ var orm = {
         
     },
 
-    updateOne: function (tableName, newBurgerName, oldBurgerName, eaten, cb) {
+    updateOne: function (tableName, burgerID, eaten, cb) {
         var queryString = "UPDATE " + tableName +
-                          " SET burger_name = " + "'" + newBurgerName + "'" + ", devoured = " + eaten +
-                          " WHERE burger_name = " + "'" + oldBurgerName + "'" + ";"
+                          " SET devoured = " + eaten +
+                          " WHERE id = " + burgerID +";"
         
         mySQLconnection.query(queryString, function (error, result) {
             if (error) throw error;
