@@ -1,6 +1,6 @@
-<h1>Burgers!</h1>
+<h1>Let's practice eating burgers......Virtually!</h1>
 
-<h2>Do you eat regular burgers, or would you like to make your own?</h2>
+<h2>You have already eaten these types in the past:</h2>
 
 <ul>
   {{#each burger}}
@@ -10,7 +10,7 @@
   {{/each}}
 </ul>
 
-<h2>Burgers that have already been devoured</h2>
+<h2>To eat section:</h2>
 
 <ul>
   {{#each burger}}
@@ -24,15 +24,15 @@
 <form class="create-form">
 
   <div class="form-group">
-    <label for="bu">Burger Name/type:</label>
+    <label for="bu">Burger Name/When to eat?:</label>
     <input type="text" id="bu" name="name">
   </div>
 
   <div class="form-group">
-    <label for="slee">Eaten or naw?</label><br>
-    <input type="radio" name="eaten" value="1" checked> Devoured!<br>
-    <input type="radio" name="eaten" value="0"> Devour
+    <label for="slee">Eat it now, or Later?</label><br>
+    <input type="radio" name="eaten" value="1" checked>Eat it Later<br>
+    <input type="radio" name="eaten" value="0"> Eat it NOW!
   </div>
 
-  <button type="submit">Add Burger</button>
+  <button type="submit">Just do it</button>
 </form>
